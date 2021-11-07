@@ -2,10 +2,8 @@
 Creating 2D array of size 1024 x 1024
 
 ## Description
-Is there a way to speed up the compilation of code with large arrays?
-For my use case, I am trying to load a matrix (of size 1024 x 1024) and compute its product with a vector (of size 1024).
-
-This code snipper has not yet finished despite running the for 9+ hours.
+I am unable to load moderately sized const 2D array. In the following code snippet, I am simply trying to load a matrix and multiply it with a scalar.
+However, after running for 10+ hours, the compiler simply fails.
 Here is the link to the [full code](https://github.com/sshravan/zok-issues/tree/main/issue-01/).
 
 ## Environment
@@ -51,6 +49,10 @@ def main(field scalar):
 
 ```bash
 $ zokrates compile -i bug/main.zok
+Compiling bug/main.zok
+
+[2]    366099 killed     zokrates compile -i bug/main.zok
+zokrates compile -i bug/main.zok  37104.11s user 32.63s system 99% cpu 10:21:45.32 total
 ```
 
 Any suggestions to speed up the compilation is highly appreciated!

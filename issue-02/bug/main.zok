@@ -1,0 +1,4 @@
+const field LIMIT = 16383
+def main(field x):
+    assert(x < LIMIT)
+    return
