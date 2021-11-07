@@ -1,0 +1,13 @@
+from "./utils/matrix" import MATRIX
+const u32 SIZE = 1024
+
+def main(field scalar):
+    field[SIZE][SIZE] result = [[0; SIZE]; SIZE]
+    for u32 i in 0..SIZE do
+        for u32 j in 0..SIZE do
+            result[i][j] = MATRIX[i][j] * scalar
+        endfor
+    endfor
+
+    assert(result == [[0; SIZE]; SIZE])
+    return
